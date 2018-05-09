@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Availability | Parking Spot App</title>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+  
+  <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+  <link href="css/font-awesome.css" rel="stylesheet">
+
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  <script src="js/jquery-2.2.3.min.js"></script>  
+
+  <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+</head>
+
+<body>
+  <div class="header">
+    <nav class="navbar navbar-default">
+        <div class="container"> 
+            <div class="navbar-header navbar-left wthree">
+            </div>
+            <!--input type="text" id="mapsearch" size="50"-->
+            <!-- navigation -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="header-right wthree">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">					
+                    <ul class="nav navbar-nav navbar-left cl-effect-14">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="availability.html" class="active">Availability</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html">Log in</a></li>			
+                    </ul>		
+                    <div class="clearfix"> </div>
+                </div><!-- //navigation -->
+            </div>
+            <div class="clearfix"> </div>
+        </div>	
+    </nav>		
+  </div>	
+  <pre id="availability"></pre>
+
+
+    <ul id= "list"></ul>
+
+      <input type="text" id="myinput" placeholder="Search">
+      <button id="btnAvailability" class="btn btn-action">
+        Check Availability
+      </button>
+
+      
+      <!--button onclick="myFunction()">Check Availability</button-->
+      Availability : <availability></availability>
+
+      <p id="demo"></p>
+      <p id="output"></p>
+
+      <!--input type="text" id="myinputbook" placeholder="Book"-->
+      <button id="btnBooking" class="btn btn-secondary">
+        Book the Slot
+      </button>
+      <!--button onclick="myFunctionBook()">Book</button-->
+      Booking : <booking></booking>
+
+      <script src="js/availabilityNew.js"></script>
+    <!--script src="js/availability.js"></script>
+    <script src="js/booking.js"></script-->
+
+  <script src="js/bootstrap.js"></script>
+  
+</body>
+
+</html>
